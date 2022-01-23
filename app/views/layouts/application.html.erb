@@ -1,15 +1,36 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>OsoujiMania</title>
+    <title>おそうじマニア!</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
+    <meta name="viewport" content="width=divice-width, initial-scale=1, maximum-scale=1">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/4.2.0/core/main.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/4.2.0/daygrid/main.min.css">
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
-  <body>
-    <%= yield %>
+  <body class="flex-colum vh-100">
+    <header class="shadow-sm">
+      
+    </header>
+    
+    <main>
+      <%= yield %>
+    </main>
+    
+    <footer class="pt-5 pb-4">
+      <div class="container">
+        <div class="row no-gutters">
+          <div class="col">
+            <p>掃除をラクにきれいに終わらせたい人たちのためのSNS</p>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
+  
 </html>
