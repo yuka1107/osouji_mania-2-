@@ -5,7 +5,7 @@ Rails.application.routes.draw do
   end
   
   namespace :admin do
-    
+    root to: '/admin/homes#top'
   end
   
 end
